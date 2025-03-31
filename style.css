@@ -1,0 +1,406 @@
+@import url(images/banner-posterizado-final.jpg);
+
+body{
+    margin: 0;
+    min-height: 100vh;
+}
+.layout {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav    nav"
+        "aside  main"
+        "footer footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    gap: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f9f9f9;
+}
+
+/*CABECERA+MENÚ DE NAVEGACIÓN************************************************************************************************************/
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("images/banner-posterizado-final.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    height: 150px;
+}
+
+
+nav {
+    grid-area: nav;
+    background-color: #ccc;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 50px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.enlaces a:hover {
+    color: #984ae2;
+}
+/**************************************************************************************************************************************/
+
+/*ASIDE*******************************************************************************************************************************/
+aside {
+    grid-area: aside;
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+aside h1 {
+    text-align: center;
+    color: #803eb0;
+}
+
+aside p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #333;
+}
+/**************************************************************************************************************************************/
+
+
+/*MAIN********************************************************************************************************************************/
+main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section h2 {
+    text-align: center;
+    color: #803eb0;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.card p {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #4A4A4A;
+}
+
+.segunda-fila-imagenes {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/***************************************************************************************************************************************/
+
+/*FOOTER********************************************************************************************************************************/
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-links, .footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-links h4, .footer-social h4 {
+    margin-bottom: 10px;
+    color: #ffccff;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li,
+.footer-social li {
+    margin: 8px 0px;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.footer-links li:hover,
+.footer-social li:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    width: 100%;
+}
+.imagen-ufej{
+    background-color: #ccc;
+    width: 200px;
+    height: 200px;
+}
+
+.imagen-ufej img{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+/****************************************************************************************************************************************/
+
+/* Estilos para el formulario de contacto***********************************************************************************************/
+.contacto-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgb(251, 233, 251);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-section h2 {
+    text-align: center;
+    color: #803eb0;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contact-form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    border-color: #984ae2;
+    background-color: #f3eaff;
+}
+
+.contact-form select {
+    appearance: none;
+    background-color: white;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon fill='%23984ae2' points='70,100 20,40 120,40 '/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 15px;
+}
+
+.contact-form button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background:#984ae2;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background:#5e1a9e;
+}
+
+.contacto-section {
+    position: relative;
+    background-size: 120px;
+}
+
+/* Estilos para el apartado de más información**********************************************************************************************/
+#mas-info {
+    padding: 40px 20px;
+    background-color: #f5f0fa;
+    border-top: 4px solid #803eb0;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#mas-info h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #803eb0;
+    margin-bottom: 30px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.timeline-item {
+    background: #fff;
+    padding: 20px;
+    border-left: 6px solid #984ae2;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item h3 {
+    margin-top: 0;
+    color: #803eb0;
+}
+
+.frases {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.frases h3 {
+    text-align: center;
+    color: #803eb0;
+    margin-bottom: 20px;
+}
+
+.frases blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #984ae2;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+/****************************************************************************************************************************************/
+
+/*MÓVILES*/
+
+@media (max-width: 767px) {
+    /* Reorganiza el layout para una sola columna */
+    .layout {
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+      grid-template-columns: 1fr;
+    }
+  
+    /* Menú de navegación vertical */
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav a {
+      margin: 10px 0;
+    }
+  
+    /* Tarjetas más pequeñas y en columna */
+    .card {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .card img {
+      height: auto;
+    }
+  
+    .cards,
+    .segunda-fila-imagenes {
+      justify-content: center;
+    }
+  
+    /* Footer en columna para que no se apriete */
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .imagen-ufej {
+      margin-top: 20px;
+    }
+  }
+  

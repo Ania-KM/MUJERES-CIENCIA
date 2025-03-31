@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <a href="/index.html">Inicio</a>
+        <a href="#">Contacto</a>
+        <a href="/PAGES/informacion.html">Más información</a>
+    </nav>
+    <main>
+        <section class="contacto-section">
+            <h2>Contáctanos</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nombre"><i class="fas fa-user"></i> Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="motivo"><i class="fas fa-comment-dots"></i> Motivo</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje"><i class="fas fa-pen"></i> Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><i class="fas fa-home"></i> Inicio</li>
+                    <li><i class="fas fa-envelope"></i> Contacto</li>
+                    <li><i class="fas fa-cogs"></i> Servicios</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <ul>
+                    <li><i class="fab fa-facebook-f"></i> Facebook</li>
+                    <li><i class="fab fa-twitter"></i> Twitter</li>
+                    <li><i class="fab fa-instagram"></i> Instagram</li>
+                </ul>
+            </div>
+            <div class="imagen-ufej">
+                <img src="/IMAGES/ufejformacion_SEP23.png" alt="UFEJ">
+            </div>
+        </div>
+        <p class="footer-bottom">© 2025 Todos los derechos reservados | Creado por [Tu Nombre]</p>
+    </footer>
+</body>
+</html>
