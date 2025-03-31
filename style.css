@@ -25,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url("images/banner-posterizado-final.jpg");
+    background-image: url("IMAGES/banner-posterizado-final.jpg");
     background-size: cover;
     background-position: center;
     padding: 40px 20px;
